@@ -1,6 +1,5 @@
 <div align="center">
 
-![Jane-zz Banner](https://jane-zz.me/banner.png)
 
 # 你好，我是 Jane-zz 👋
 
