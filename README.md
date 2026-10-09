@@ -20,10 +20,11 @@
 
 ## 关于我
 
-- 武汉纺织大学人工智能专业本科生，长期投入 Agent 工程与大模型应用实践。
-- 在三家互联网公司与中国船舶第七〇一研究所累计完成 **12+ 个月、4 段研发实践**。
+- 武汉纺织大学人工智能专业本科生、计算机创新创业人才班成员，长期投入 Agent 工程与大模型应用实践。
+- 已完成 **4 段研发实践**，覆盖三家企业与中国船舶第七〇一研究所。
 - 研发范围覆盖 Agent 定时任务、Memory / Context、Evals、Multi-Agent、GraphRAG 与计算机视觉。
-- 参与建设的 SkillHub 已服务 **1000+ 开发者、沉淀 5000+ Skills**；个人 Agent Pulse Skill 已获 **26.5k+ 安装**。
+- 参与建设的 SkillHub 已服务 **1000+ 开发者、沉淀 5000+ Skills**；个人 Agent Pulse Skill 已获 **47,519 次安装**（2026-10-09 skills.sh 快照）。
+- 独立交付支持 **6 种语言**的桌面 Agent；已完成 **3 项专利交底，申报推进中**。[专利与科研](https://jane-zz.me/#research)
 - 既关注 Agent 的推理与任务执行，也关注系统是否可追踪、可评测、可恢复和可维护。
 
 > 您目前看到的所有关于我的信息，都不是我的最终形态。  
@@ -37,7 +38,7 @@
 | 方向 | 工程实践 |
 | --- | --- |
 | **Orchestration** | 使用 AgentScope、LangGraph 与 PocketFlow 进行主 / 子 Agent 设计、任务拆分、状态流转和工作流编排 |
-| **Runtime & Harness** | 理解模型调用、执行循环、工具注册、会话状态、结构化事件、权限边界和执行结果反馈 |
+| **Runtime & Harness** | 基于 Pi SDK 实践持久会话、后台任务、执行循环、工具注册、结构化事件、权限边界和失败恢复 |
 | **Memory & Context** | 实践记忆更新、历史对话筛选与排序、上下文拼接、长度控制和后台清理任务 |
 | **Tools & Ecosystem** | 开发 Tool Calling、MCP 与 Codex Skills，并参与 SkillHub 生态建设 |
 | **Evals & Observability** | 参与 Agent 评测、结果统计与 Badcase 分析，熟悉 Langfuse 链路追踪和运行监控 |
@@ -47,23 +48,33 @@
 
 ## 代表项目
 
+### [Personal Agent](https://github.com/Jane-o-O-o-O/personal-agent)
+
+基于 Pi SDK、TypeScript、Fastify、React、SQLite 与 Chromium 的自托管个人 AI 助手。支持持久后台任务、定时目标、可编辑记忆、原生浏览器人工接管及 MCP/API 扩展，网页关闭后任务仍在服务端继续执行。
+
+**2026-10-04 冻结版本**通过 **166 项单元与服务集成、27 项网页端到端、31 项公网浏览器与交接检查**，三组分别统计，范围见验证报告。
+
+`Pi SDK` `Persistent Tasks` `Human-in-the-Loop` `Chromium` `MCP`
+
+[工程案例](https://jane-zz.me/projects/personal-agent/) · [该版本验证报告](https://github.com/Jane-o-O-o-O/personal-agent/blob/b08d387cde83fdd23ca4a75f0a74173f810967ec/docs/browser-interaction-recheck.md)
+
 ### [grok-build-desktop](https://github.com/Jane-o-O-o-O/grok-build-desktop)
 
-基于 Electron 的多 Agent 协作式 AI 编程工作台。采用“主 Agent + 多个独立任务 Agent”的协作模式，为每个 Agent 建立隔离的 Runtime、上下文和任务状态，并通过共享 Memory 与项目上下文同步保持协作一致。
+基于 Electron 的 Grok Build 桌面工作台，复用原生 `grok` Runtime、会话与 Memory 机制，集成主任务与并行侧任务、流式工具活动、持久终端、嵌入式浏览器和 Git 工作区，支持 MCP 与第三方模型接入。
 
-将回答、思考和工具调用抽象为结构化事件，支持实时执行展示、状态追踪、会话续接、Git 分支管理、Diff 统计、Electron 沙箱与敏感密钥安全存储。
+已发布 **[v0.1.2](https://github.com/Jane-o-O-o-O/grok-build-desktop/releases/tag/v0.1.2)**，覆盖 **Windows、macOS、Linux**，提供 **59 项原生设置**；支持会话续接、工具状态追踪与敏感密钥安全存储。
 
 `Multi-Agent` `Electron` `Runtime` `Memory` `Structured Events`
 
 ### [Agent-Pulse-Skill](https://github.com/Jane-o-O-o-O/agent-pulse-skill)
 
-面向 Agent 使用分析的 Codex Skill，skills.sh 下载安装量 **26.5k+**。支持 Codex、Claude、Cursor、Aider、Copilot 等平台日志的会话检索、Token 与成本统计、预算预测、健康检查和报表导出。
+面向 Agent 使用分析的 Codex Skill，skills.sh 安装量 **47,519 次，约 47.5k**（2026-10-09 快照）。支持 Codex、Claude、Cursor、Aider、Copilot 等平台日志的会话检索、Token 与成本统计、预算预测、健康检查和报表导出。
 
 通过标准化 Skill 描述、命令选择流程与 JSON 快照，让 Agent 能根据用户意图自动调用对应 CLI 能力。
 
 `Codex Skills` `Agent Observability` `CLI` `Token Analytics` `skills.sh`
 
-[skills.sh](https://www.skills.sh/jane-o-o-o-o/agent-pulse-skills/agent-pulse) · [GitHub](https://github.com/Jane-o-O-o-O/agent-pulse-skill)
+[skills.sh](https://www.skills.sh/jane-o-o-o-o/agent-pulse-skill/agent-pulse) · [GitHub](https://github.com/Jane-o-O-o-O/agent-pulse-skill)
 
 ### [RelationGraph](https://github.com/Jane-o-O-o-O/RelationGraph)
 
@@ -91,21 +102,23 @@ Neo4j + FastAPI + React + TypeScript 的 3D 知识图谱系统。支持实体构
 
 ## 研发经历
 
-**AI 技术实习生 · 深圳市亿道信息集团 / 亿道研究院**<br>
-`2026.06 - 至今`
+**Agent 算法研究员 · 亿道数字中央研究院**<br>
+`2026.06 - 2026.09`
 
-- 参与 Ailyn 定时任务、记忆与上下文模块开发，维护任务触发规则、执行状态与异常处理。
-- 完成历史对话筛选、排序、拼接和上下文长度控制，减少无效输入并提升多轮理解能力。
-- 参与 Agent 评测流程建设，执行评测、统计结果并分析 Badcase，辅助优化一致性与任务完成效果。
+- 负责 Agent-One 的 Evaluation Harness、Benchmark Runner 与 Langfuse 可观测链路，以 Case JSON 统一评测规格和判定依据。
+- 本项目测试素材覆盖率由 **64.8% 提升至 88.9%**；原 **10 个多轮失败案例全部恢复后续交互，其中 8 个转为通过**。
+- 优化定时任务从意图识别到执行触发的链路，修复相对时间计算偏差、单次/循环任务误判与审批循环。
+- 作为 Agent-Two 项目 owner，基于 Pi Agent、Electron 与 React 独立完成支持 **6 种语言**的桌面 Agent，覆盖架构、前后端开发、测试与交付。
 
-**全栈工程实习生 · 北京未来式智能科技有限公司**<br>
+**AI 应用工程师 · 北京未来式智能科技有限公司**<br>
 `2026.02 - 2026.05`
 
 - 完成无向图建模、实体解析合并、Leiden 社区发现、社区摘要生成与检索增强的 GraphRAG 全链路升级。
-- 实现边键规范化、无向 PageRank 与 `communityId` 在 Neo4j / Elasticsearch 的全链路持久化。
-- 参与 SkillHub 生态建设，将多项内部产品、MCP 与 RAGFlow 能力封装为 Skills，服务 1000+ 开发者。
+- 实现边键规范化、无向 PageRank 与 `communityId` 持久化；引入本地 NLP 与社区摘要增量更新，相较原全量大模型处理链路，图谱构建成本降低约 **60%**。
+- GraphRAG 交付四川某国企，该部署图谱知识库存储超过 **1000GB**、实体节点超过 **60 万**，检索速度维持在十秒内。
+- 参与 SkillHub 技能封装、注册、分发与运行规范建设，服务 **1000+ 开发者、沉淀 5000+ Skills**。
 
-**Agent 研发实习生 · 武汉绘梦心河有限公司**<br>
+**Agent Flow 研发工程师 · 武汉绘梦心河有限公司**<br>
 `2025.09 - 2025.12`
 
 - 从零搭建基于 AgentScope 的论文生成工作流，完成主 Agent、子 Agent 与任务协作设计。
@@ -117,7 +130,9 @@ Neo4j + FastAPI + React + TypeScript 的 3D 知识图谱系统。支持实体构
 
 - 参与双模态水上目标识别方法研发与验证，并基于研究所数据集完成系统实验分析。
 - 完成与 YOLOv8、FusionVIRNet 的对比实验。
-- 参与目标检测技术与大模型微调优化。
+- 参与目标检测技术与大模型微调优化；团队相关成果发表于 Springer 旗下 SCI 期刊 **The Visual Computer**。
+
+[最新简历与指标来源](https://jane-zz.me/resume-latest.pdf) · [研发经历详情](https://jane-zz.me/#experience)
 
 ---
 
@@ -129,11 +144,11 @@ Neo4j + FastAPI + React + TypeScript 的 3D 知识图谱系统。支持实体构
 
 **Agent Runtime**
 
-`Agent Harness` `Execution Loop` `Tool Registry` `Structured Events` `Sandbox`
+`Pi SDK` `Agent Harness` `Execution Loop` `Tool Registry` `Structured Events` `Sandbox`
 
 **上下文与评测**
 
-`Memory` `Context Engineering` `Langfuse` `Agent Evals` `Badcase`
+`Memory` `Context Engineering` `Langfuse` `Evaluation Harness` `Benchmark Runner` `Agent Evals` `Badcase`
 
 **工具与生态**
 
@@ -154,9 +169,9 @@ Neo4j + FastAPI + React + TypeScript 的 3D 知识图谱系统。支持实体构
 **武汉纺织大学 · 人工智能本科**<br>
 `2023.09 - 至今`
 
-- 全国大学生测绘程序设计大赛：**全国特等奖**，前 5%，2024。
+- 全国大学生测绘程序设计大赛：**全国特等奖**，2024。
 - China Robot Competition & RoboCup：**全国三等奖**，2024。
-- 全球算法精英大赛 · 巡航射击：**全国优秀奖**，2025.12。
+- 全球人工智能算法精英大赛 · 巡航射击赛道：**全国优秀奖**，2025.12。
 - 另获计算机设计、计算机能力挑战、创新创业与数学建模等多项省级奖项。
 
 ---
@@ -164,6 +179,10 @@ Neo4j + FastAPI + React + TypeScript 的 3D 知识图谱系统。支持实体构
 ## GitHub 数据
 
 <div align="center">
+
+**3,762 次近一年贡献 · 53 个公开仓库**
+
+<sub>2026-10-09 快照，贡献按 GitHub 贡献日历统计；下方图卡动态更新。</sub>
 
 <img src="https://github-readme-stats.vercel.app/api?username=Jane-o-O-o-O&show_icons=true&theme=transparent&hide_border=true" width="48%" alt="GitHub Stats" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jane-o-O-o-O&theme=transparent&hide_border=true" width="48%" alt="GitHub Streak" />
