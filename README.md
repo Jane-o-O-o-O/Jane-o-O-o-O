@@ -23,13 +23,13 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Jane-o-O-o-O/personal-agent">Personal Agent ↗</a></h3>
+<h3><a href="https://github.com/Jane-o-O-o-O/personal-agent">Personal Agent</a></h3>
 <p>拥有持久任务、长期记忆与原生浏览器的自托管个人 AI 助手。</p>
 <p><sub>Pi SDK · TypeScript · Chromium · MCP</sub></p>
 <a href="https://jane-zz.me/projects/personal-agent/">查看工程案例</a>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Jane-o-O-o-O/codex-evo-harness">Codex Trace Viewer ↗</a></h3>
+<h3><a href="https://github.com/Jane-o-O-o-O/codex-evo-harness">Codex Trace Viewer</a></h3>
 <p>把 Codex 执行轨迹变成可检索、可复盘的证据，支持受控 Harness 优化。</p>
 <p><sub>Trace · Observability · Harness</sub></p>
 <a href="https://github.com/Jane-o-O-o-O/codex-evo-harness">查看源码</a>
@@ -37,13 +37,13 @@
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Jane-o-O-o-O/grok-build-desktop">Grok Build GUI ↗</a></h3>
+<h3><a href="https://github.com/Jane-o-O-o-O/grok-build-desktop">Grok Build GUI</a></h3>
 <p>复用原生 Grok Runtime，整合并行任务、终端、浏览器与 Git 的 AI 编程工作台。</p>
 <p><sub>Electron · Grok · Multi-Agent</sub></p>
 <a href="https://github.com/Jane-o-O-o-O/grok-build-desktop">查看源码</a>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Jane-o-O-o-O/agent-pulse-skill">Agent Pulse Skill ↗</a></h3>
+<h3><a href="https://github.com/Jane-o-O-o-O/agent-pulse-skill">Agent Pulse Skill</a></h3>
 <p>多平台 Agent 会话、Token、成本与健康分析。skills.sh 安装量 <strong>47.5k</strong>。</p>
 <p><sub>Skills · CLI · Analytics · 2026-10-09 快照</sub></p>
 <a href="https://www.skills.sh/jane-o-o-o-o/agent-pulse-skill/agent-pulse">查看 Skill</a>
